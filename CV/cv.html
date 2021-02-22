@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Site codé en mobile first, le meta tag permet un rendu optimal de la responsivité -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- chargement de la libraire CSS bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<!-- Chargement de la libraire d'icones vectorielle font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<!-- link de ma page css -->
+<link rel="stylesheet" href="style.css">
+
+<!-- polices -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+  rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+<!-- titre de la page (affichée sur l'onglet) -->
+<title>CV Valentin Galaup</title>
+
+
+</head>
+
+
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-5" id="menu">
+      <div class="container-fluid">
+
+        <!--ancre vide pour renvoyer en haut de page -->
+        <a class="navbar-brand" href="#">Valentin Galaup</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#" id='buttonSkill'>Mes compétences</a>
+            <a class="nav-link" href="#" id='buttonExperience'>Mes expériences</a>
+            <a class="nav-link" href="#" id='buttonDiploma'>Ma formation</a>
+            <a class="nav-link " href="#" id='buttonHobbies'>Mes hobbies</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <div class="mainContent">
+      <div class="sideBar" id="sideBar">
+        <ul>
+          <li><img src="images/photo_cv.jpg" alt="ma photo" class="profilePicture"></li>
+          <li>28 ans</li>
+          <li>Véhiculé</li>
+          <li>Telephone : 06 95 30 94 74</li>
+          <li><a href="mailto:valentin.galaup@hotmail.fr">valentin.galaup@hotmail.fr</a></li>
+          <li><a href="https://www.linkedin.com/in/valentin-galaup-1736bb58/">Page Linked In</a></li>
+          <li>Github</li>
+        </ul>
+      </div>
+
+
+
+      <div class="pageContent">
+        <h1>Developpeur web en recherche d'alternance</h1>
+        <div id="intro">
+          <p>Bienvenue sur mon site. Ce site a été construit pour servir de cv ainsi que de portfolio.</p>
+          <p>Vous pouvez naviguer en uttilisant le menu en haut de la page</p>
+          <p>Vous trouverez dans la partie "mes réalisations" des liens de redirections vers differents projets que
+            j'ai
+            réalisé, soit pendant mon auto-formation, soit pendant les cours au sein de la 3WAcadémie</p>
+          <p>Je vous souhaite une excellente visite</p>
+        </div>
+
+        <div id="skill" style="display:none">
+          <h2>Mes compétences</h2>
+
+
+          <div class="flex skillsBox">
+
+            <div class="skillCategory computerScience">
+              <h3>Informatique/developpement</h3>
+              <div class="skill ">
+                <h3>HTML/CSS </h3>
+                <div class="wrapper">
+                  <div class="container chart" data-size="100" data-value="90" data-arrow="up">
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <h3>Javascript</h3>
+                <div class="wrapper">
+                  <div class="container chart" data-size="100" data-value="60" data-arrow="up">
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <h3>PHP/SQL</h3>
+                <div class="wrapper">
+                  <div class="container chart" data-size="100" data-value="55" data-arrow="up">
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <h3>Uttilisation d'ERP (AS 400, GCH et SAP)</h3>
+                <div class="wrapper">
+                  <div class="container chart" data-size="100" data-value="83" data-arrow="up">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="skillCategory others">
+              <h3>Management/commerce/gestion</h3>
+              <div class="skill">
+                <h3>Suivi des KPI/SIG</h3>
+                <div class="wrapper">
+                  <div class="container chart" data-size="100" data-value="99" data-arrow="up">
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="skill">
+                <h3>Management d'équipe</h3>
+                <div class="wrapper">
+                  <div class="container chart" data-size="100" data-value="95" data-arrow="up">
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <h3>Negociation/Vente</h3>
+                <div class="wrapper">
+                  <div class="container chart" data-size="100" data-value="90" data-arrow="up">
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="skill">
+                <h3> Gestion de la relation client </h3>
+                <div class="wrapper">
+                  <div class="container chart" data-size="100" data-value="100" data-arrow="up">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="skillCategory language">
+              <h3>Langues</h3>
+              <div class="skill">
+                <h3>Anglais</h3>
+                <div class="wrapper">
+                  <div class="container chart" data-size="100" data-value="100" data-arrow="up">
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <h3>Espagnol</h3>
+                <div class="wrapper">
+                  <div class="container chart" data-size="100" data-value="40" data-arrow="up">
+                  </div>
+                </div>
+
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+        <div id="diploma" style="display:none">
+          <h2>Mes diplômes</h2>
+
+          <img src="images/Formations.png" alt="frise des diplomes" style="max-width: 100%;" class="frise">
+
+        </div>
+        <div id='experience' style="display:none">
+          <h2>Mes expériences</h2>
+          <div class="flex experiences">
+
+
+            <article class="job">
+              <h3>Responsable d'univers</h3>
+
+
+              <div class="boxOverlay">
+                <img src="images/boulanger.png" alt="logo boulanger" class="image">
+                <div class="overlay">
+                  <div class="text">Management,gestion,vente</div>
+                </div>
+
+              </div>
+              <li>
+                <ul>2017->2019</ul>
+                <ul>Vendeur Electroménager :6 Mois</ul>
+                <ul>Animateur commerce : 6 mois</ul>
+                <ul>Gestion des stocks</ul>
+                <ul>Suivi qualitatif et quantitatif des vendeurs</ul>
+              </li>
+            </article>
+            <article class="job">
+              <h3>Manager de rayon</h3>
+
+
+              <div class="boxOverlay">
+                <img src="images/auchan.png" alt="logo Laïta" class="image">
+                <div class="overlay">
+                  <div class="text">Management d'équipe</div>
+                </div>
+
+              </div>
+              <li>
+                <ul>2015->2017</ul>
+                <ul>alternance</ul>
+                <ul>Gestion du rayon epicerie</ul>
+                <ul>Management d'une équipe de 15 collaborateurs</ul>
+                <ul>Controle de gestion à l'echelle du rayon</ul>
+              </li>
+            </article>
+
+            <article class="job">
+              <h3>Chef de secteur</h3>
+
+
+              <div class="boxOverlay">
+                <img src="images/laïta.png" alt="logo Laïta" class="image">
+                <div class="overlay">
+                  <div class="text">Vente et relation client</div>
+                </div>
+
+              </div>
+              <li>
+                <ul>2014->2015</ul>
+                <ul>alternance</ul>
+                <ul>Responsable d'un parc de 120 magasins</ul>
+                <ul>Negociation du referencement des produits et opérations commerciales</ul>
+              </li>
+            </article>
+
+
+          </div>
+
+
+        </div>
+
+        <div id="hobbies" style="display:none">
+
+          <h2>Mes hobbies</h2>
+          <img src="images/hobbies.png" alt="image de mes hobbies" style="max-width: 100%;" class="frise">
+
+
+        </div>
+
+
+  </main>
+
+
+  <footer>
+
+  </footer>
+
+</body>
+
+
+<!-- Chargement des librairies JS et Jquery pour bootstrap -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+<script src="script.js"></script>
+<script src="dial.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</html>

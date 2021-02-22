@@ -1,0 +1,279 @@
+
+
+ /*========================================ToolBox et general===========================================================*/
+ *{
+  box-sizing:border-box;
+}
+
+html{
+   font-size:62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  padding:0;
+  margin:0;
+  background-color:#7f7f7f;
+  max-width: 100%;
+  color:whitesmoke;
+  font-family:'Lora', sans-serif;
+  
+}
+.flex{
+  display:flex;
+}
+
+a{
+  text-decoration:none;
+}
+
+.frise{
+  margin:auto;
+  display:block;
+}
+
+
+
+
+/*========================================       Header      ===========================================================*/
+.navbar{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.navbar-brand{
+  padding:5px;
+  font-size:2rem
+}
+/*========================================       Main        ===========================================================*/
+.wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+h1{
+  font-family:'Roboto', sans-serif;
+}
+
+.container {
+	flex: 1;
+	padding: 0 20px;
+}
+
+img{
+  text-align:center;
+  max-width: 100%;
+}
+ section{
+   padding:10px;
+ }
+
+ .mainContent {
+  width: 100%;
+  margin: auto;
+  display:flex;
+  flex-wrap:nowrap;
+  align-items: stretch;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2{
+  max-width: 20%;
+  font-size: 2rem;
+  border:1px solid white;
+  margin:auto;
+}
+h3{
+  font-size: 1.8rem;
+  font-style: italic;
+}  
+
+h1,h2,h3{
+  text-Align:center;
+ 
+  font-Weight:bold;
+  margin-bottom: 3rem;
+}
+
+article{
+  background-color: rgba(255, 255, 255, 0.616);
+  color:#7f7f7f;
+}
+
+p{
+  text-align: center;
+  font-size: 3rem;
+}
+/* side bar */
+
+
+
+.sideBar {
+  flex-basis:15%;
+  background-color:#212529;
+  padding:10px;
+  font-size: 2rem;
+
+ 
+}
+
+.pageContent {
+  padding:10px;
+ flex-basis: 90%;
+}
+
+.profilePicture{
+  box-shadow: 10px 5px 5px rgb(70, 68, 68);
+  border-radius:50px;
+}
+.sideBar ul{
+  line-height: 8rem;
+  text-decoration: none;
+  text-align:center;
+  
+}
+.sideBar a{
+  color:white;
+}
+.sideBar a:hover{
+  color:rgba(255, 255, 255, 0.589);
+}
+/* Fin sideBar */
+
+
+
+
+
+
+/* Compétences */
+
+
+.skillsBox {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;  
+}
+.skillCategory{
+  flex-basis: 30%;
+}
+
+
+.skill{
+  margin-bottom: 5rem;
+  background-color: #909090;
+  color:white;
+  text-align: center;
+  border-radius: 50px;
+  border: 3px dashed #919865;
+  padding:1%;
+  padding-bottom:6%;
+}
+
+.skillsBox>div{
+  display:flex;
+  flex-direction: column;
+
+}
+/* fin compétences */
+
+
+
+
+
+/* Mise en page des cartes de la section experience */
+.boxOverlay:hover .overlay {
+  opacity: 0.75;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%; 
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(76,67,67,.9);
+}
+
+.boxOverlay:hover .overlay {
+  opacity: 0.75;
+}
+
+.boxOverlay{
+  position: relative;
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border:solid white 3px;
+}
+
+.job{
+  flex-basis: 50%;
+}
+
+/*Les cartes de chaque menu */
+.experiences{
+  justify-content:space-around;
+  flex-wrap:nowrap;
+  flex-direction:row;
+  align-items:center;
+}
+
+.job{
+  margin-top:30px;
+  word-spacing:0.5rem;
+  padding-bottom:20px;
+  flex-basis:30%;
+  border: 3px dashed #919865;
+  border-radius: 50px;
+  padding:40px;
+}
+
+li{
+  list-style: none;
+}
+
+
+/* Contact */
+.contacts{
+  background-color: blue;
+}
+/*========================================       Footer       ==========================================================*/
+
+/*======responsive=======*/
+
+/*Tablette*/
+@media screen and (max-width: 780px) {
+  .mainContent{
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+/**/
+@media screen and (max-width: 980px) {
+
+  .mainContent{
+    flex-direction: column-reverse;
+  }
+
+  .skillCategory{
+    flex-basis: 100%;
+  }
+
+}
